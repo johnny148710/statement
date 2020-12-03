@@ -1,8 +1,20 @@
-@import "variables.scss";
-@import "colors.scss";
-@import "node_modules/bootstrap/scss/bootstrap";
-@import "fonts.scss";
-@import "icons.scss";
-@import "mixins.scss";
-@import "animation.scss";
-@import "form.scss";
+// Variable
+@import "global/variables";
+
+// Structure
+@import "structure/layout";
+@import "structure/grid";
+@import "structure/nav";
+
+// Header
+@import "structure/header";
+
+//Banner
+@import "structure/banner";
+
+// Styling
+@import "styling/typography";
+
+// Components
+@import "components/slick";
+@import "components/slider";
