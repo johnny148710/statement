@@ -1,0 +1,21 @@
+.call-to-action {
+	background: url('/assets/img/pattern-banner.jpg');
+	background-size: cover;
+	height: 100vh;
+
+	&__inner {
+		max-width: 400px;
+		height: 400px;
+		margin: 0 auto;
+		background: $white;
+		border-radius: 50%;
+		position: relative;
+	}
+
+	&__text {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+}

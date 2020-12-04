@@ -1,0 +1,23 @@
+.content {
+	img {
+		position: absolute;
+		z-index: 99;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}	
+
+	svg {
+		animation: move 20s ease-in-out infinite;
+		transform-origin: 50% 50%;
+	}
+}
+
+@keyframes move {
+	0%   { transform: scale(1)   translate(10px, -30px); }
+	38%  { transform: scale(0.8, 1) rotate(160deg); }
+	40%  { transform: scale(0.8, 1) rotate(160deg); }
+	78%  { transform: scale(1.3) rotate(-20deg); }
+	80%  { transform: scale(1.3) rotate(-20deg); }
+	100% { transform: scale(1)   translate(10px, -30px); }
+}

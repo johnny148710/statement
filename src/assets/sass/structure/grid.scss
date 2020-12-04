@@ -1,7 +1,8 @@
 .container {
   width: 100%;
   max-width: 1140px;
-  margin: 0 auto;
+	margin: 0 auto;
+	position: relative;
 
 	@media screen and (max-width: $screen-small) {
 		max-width: $screen-small;
@@ -19,6 +20,7 @@
 .container-fluid {
 	width: 100%;
 	max-width: 100%;
+	position: relative;
 }
 
 .row {
@@ -30,6 +32,7 @@
 
 .col {
 	flex: 1;
+	position: relative;
 
 	&__1 {
 		flex: 0 0 8.333%;
