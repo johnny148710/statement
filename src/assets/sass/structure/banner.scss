@@ -1,8 +1,8 @@
 .banner {
 	height: 100vh;
-	border-bottom-right-radius: 40%;
-	border-bottom-left-radius: 40%;
-	background: $teal;
+	border-bottom-right-radius: 100%;
+	border-bottom-left-radius: 100%;
+	background: $lightBlue;
 	overflow: hidden;
 
 	&__inner {
@@ -14,5 +14,9 @@
 
 	&__text-container {
 		margin-top: 10rem;
+
+		h1 {
+			color: $white;
+		};
 	}
 }

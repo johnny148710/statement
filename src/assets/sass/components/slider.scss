@@ -1,4 +1,73 @@
 .slider {
     position: relative;
-    background: $teal;
+    height: 600px;
+    text-align: center;
+
+    h2 {
+        font-size: 1.75rem;
+        background: url('/assets/img/paw-icon.png') no-repeat no-repeat 410px 0px;
+        background-size: contain;
+    }
+
+    img {
+        margin-bottom: -5rem;
+    }
+
+    &__text {
+        height: 120px;
+        background: $lightBlue;
+        overflow: hidden;
+        transition: .5s ease all;
+
+        h4 {
+            font-weight: 600;
+            padding-top: 1rem;
+        }
+
+        p {
+            color: $orange;
+            margin-bottom: 3rem;
+        }
+    
+        a {
+            opacity: 0;
+        }
+    }
+
+    .slick-center {
+        .slider__text {
+            height: 230px;
+            overflow: visible;
+            
+            a {
+                opacity: 1;
+            }
+        }
+    }
+
+    .arrow-container {
+        position: absolute;
+        top: 0;
+        width: 100%;
+
+        .slick-arrow {
+            width: 20px;
+            display: block;
+            position: absolute;
+            top: 250px;
+            cursor: pointer;
+
+            &.prev {
+                left: -30px;
+            }
+
+            &.next {
+                right: -30px;
+            }
+
+             i {
+                 color: $orange;
+             }
+        }
+    }
 }
