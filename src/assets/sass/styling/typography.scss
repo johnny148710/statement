@@ -42,6 +42,10 @@ a {
         text-transform: uppercase;
         border: 3px solid transparent;
 
+        @media screen and (max-width: $screen-small) {
+            padding: 0.5rem 1rem;
+        }
+
         &:hover {
             color: $orange;
             background: $white;
@@ -83,4 +87,8 @@ button {
 img {
     max-width: 100%;
     height: auto;
+}
+
+ul {
+    padding-left: 0;
 }

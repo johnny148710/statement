@@ -4,16 +4,16 @@
 	margin: 0 auto;
 	position: relative;
 
-	@media screen and (max-width: $screen-small) {
-		max-width: $screen-small;
+	@media screen and (max-width: $screen-large) {
+		max-width: $screen-large;
 	}
 
 	@media screen and (max-width: $screen-medium) {
 		max-width: $screen-medium;
 	}
 
-	@media screen and (max-width: $screen-large) {
-		max-width: $screen-large;
+	@media screen and (max-width: $screen-small) {
+		max-width: $screen-small;
 	}
 }
 
@@ -33,7 +33,8 @@
 .col {
 	flex: 1;
 	position: relative;
-
+	box-sizing: border-box;
+	
 	&__1 {
 		flex: 0 0 8.333%;
 		max-width: 8.333%;
@@ -48,10 +49,10 @@
 		flex: 0 0 16.667%;
 		max-width: 16.667%;
 
-		@media screen and (max-width: $screen-small) {
-			flex: 0 0 100%;
-			max-width: 100%;
-		}
+		// @media screen and (max-width: $screen-small) {
+		// 	flex: 0 0 100%;
+		// 	max-width: 100%;
+		// }
 	}
 
 	&__3 {
@@ -128,10 +129,10 @@
 		flex: 0 0 83.333%;
 		max-width: 83.333%;
 
-		@media screen and (max-width: $screen-small) {
-			flex: 0 0 100%;
-			max-width: 100%;
-		}
+		// @media screen and (max-width: $screen-small) {
+		// 	flex: 0 0 100%;
+		// 	max-width: 100%;
+		// }
 	}
 
 	&__11 {

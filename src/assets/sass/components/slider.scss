@@ -7,6 +7,14 @@
         font-size: 1.75rem;
         background: url('/assets/img/paw-icon.png') no-repeat no-repeat 410px 0px;
         background-size: contain;
+
+        @media screen and (max-width: $screen-large) {
+            background-position: 220px 0px;
+        }
+
+        @media screen and (max-width: $screen-small) {
+            background: none;
+        }
     }
 
     img {
@@ -57,12 +65,24 @@
             top: 250px;
             cursor: pointer;
 
+            @media screen and (max-width: $screen-large) {
+                top: 0;
+            }
+
             &.prev {
                 left: -30px;
+
+                @media screen and (max-width: $screen-large) {
+                    left: 0;
+                }
             }
 
             &.next {
                 right: -30px;
+
+                @media screen and (max-width: $screen-large) {
+                    right: 0;
+                }
             }
 
              i {

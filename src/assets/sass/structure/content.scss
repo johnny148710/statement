@@ -1,16 +1,38 @@
 .content {
-	img {
-		position: absolute;
-		z-index: 99;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: 	50%;
-	}	
 
-	svg {
-		animation: move 20s ease-in-out infinite;
-		transform-origin: 50% 50%;
+	&__image {
+		@media screen and (max-width: $screen-small) {
+			height: 300px;
+			text-align: center;
+		}
+
+		img {
+			position: absolute;
+			z-index: 1;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 	50%;
+		}	
+	
+		svg {
+			animation: move 20s ease-in-out infinite;
+			transform-origin: 50% 50%;
+	
+			@media screen and (max-width: $screen-large) {
+				width: 65%;
+    			height: 200px;	
+			}
+		}
+	}
+		
+	&__text {
+		@media screen and (max-width: $screen-small) {
+			flex: 0 0 83%;
+			max-width: 83%;
+			padding: 2rem;
+			text-align: center;
+		}
 	}
 }
 

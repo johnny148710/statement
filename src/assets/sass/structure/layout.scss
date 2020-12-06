@@ -2,6 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
 }
+
 .padding-full {
 	padding: 2rem;
 }
@@ -31,3 +32,93 @@ body {
 .padding-right {
 	padding-right: 2rem;
 }
+
+.modal {
+	display: none;
+	position: fixed; 
+	z-index: 1; 
+	padding-top: 100px; 
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%; 
+	background-color: rgba(0,0,0,0.4);
+	transition: .5s ease all;
+
+	@media screen and (max-width: $screen-small) {
+		overflow: auto;
+		padding-top: 0; 
+	}
+  
+	.modal-content {
+		position: relative;
+		background-color: $white;
+		margin: auto;
+		width: 80%;
+		transition: .5s ease all;
+
+		@media screen and (max-width: $screen-small) {
+			height: 100%;
+		}
+	
+		.close {
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			color: #aaaaaa;
+			float: right;
+			font-size: 28px;
+			font-weight: bold;
+			z-index: 99;
+		
+			&:hover,
+			&:focus {
+				color: #000;
+				text-decoration: none;
+				cursor: pointer;
+			}
+		}
+		  
+		&__img {
+			background: #F2F1F6;	
+		}
+
+		&__text {
+			background: $white;
+
+			h3 {
+				@media screen and (max-width: $screen-small) {
+					font-size: 1.5rem;
+				}
+			}
+
+			input {
+				padding: 1rem;
+				border-radius: 35px;
+				width: 100%;
+				margin-bottom: 1.4rem;
+				border: none;
+				background: #E7F6F9;
+				color: #fff;
+			
+				&[type="submit"] {
+					width: initial;
+					cursor: pointer;
+					background: #ff5c00;
+					border-radius: 30px;
+					color: #fff;
+					padding: 1rem 4rem;
+					text-align: center;
+					text-transform: uppercase;
+					border: 3px solid transparent;
+					transition: .5s ease all;
+				}
+			}
+		}
+	}
+}
+  
+  
+  
+  
+  
